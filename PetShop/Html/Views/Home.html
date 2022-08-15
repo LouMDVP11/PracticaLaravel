@@ -1,0 +1,128 @@
+<!-- 
+hay dos tipos de rutas:
+Rutas Absolutas: tienen protocolos (http y https), son páginas únicas en la red, suelen ser rutas externas
+Pero no siempre vamos a usar rutas absolutas, para eso son las
+Rutas Relativas: son relativas al punto donde nos encontramos o relativas a la raíz del proyecto.
+-->
+
+<!-- 
+    *Si la ruta está al mismo nivel, para llamarla solo ponemos el nombre.
+    Si no está al mismo nivel, necesitamos salir de la carpeta usando ../
+    por cada nivel que necesitemos subir.
+ -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Css/Styless.css">
+    <link rel="stylesheet" href="../../Css/normalize.css">
+    <title>Acerca de</title>
+ </head>
+ <body>
+    <header>
+        <!-- div es un elemento de bloque -->
+        <!-- <div class="bloque"> bloque </div> -->
+        <a href="https://www.google.com/" target="_blank">Home</a>
+        <a href="Index.html" target="_self">Inicio</a>
+        <a href="Perros.html" target="_self">Perros</a>
+        <a href="Gatos.html" target="_self">Gatos</a>
+        <a href="Productos.html" target="_self">Artículos en venta</a>
+        <a href="DerechosA.html" target="_self">Derechos de Autor</a>
+    </header>
+    <main>
+        <section class="imagen"><img src="../../Assets/Images/petShopImg.jpg" alt="" width="20%"></section>
+        <h1>Patitas PetShop</h1>
+        <h2> Acerca de nosotros</h2>
+        <p>
+            Somos una marca distintiva y especializada en la venta de los mejores productos para el cuidado de perros y gatos. 
+            En Patitas PetShop creemos fielmente que nuestros compañeros de cuatro patas necesitan de la mejor atención y cuidados, 
+            por lo que consideramos que necesitan tener una alimentación de calidad.
+        </p>
+        <p>
+            Queremos que aprendas más sobre tu mascota, por lo que hemos creado un apartado especial
+            para ti, en donde podrás encontrar datos sobre el cuidado de tu compañero ideal;<br>
+            porque debemos recordar que nuestros compañeros perfectos nunca tienen menos de cuatro patas.
+        </p>
+        <!-- 
+            Form -> es la estiqueta que engloba nuestro formulario
+            Label -> sirve para escribir el nombre del campo a rellenar (son las letras)
+            Input -> sirve para crear el campo con el cual el usuario va a interactuar (es el txtbox)
+            Button -> crea un boton que permite enviar el formulario.
+
+            button -> se comporta como un botón <button>
+            color -> dentro de ese input hay un color específico
+            date -> introducir una fecha (formato calendario)
+            datatime -> obsoleto
+            datatime-local -> trabaja fecha y hora y no trabaja con firefox
+            email -> se utiliza para introducir un email
+            hidden -> Campo oculto, puede contener valor pero no se mostrará
+            month -> se utiliza para introducir un mes
+            number -> se utiliza para valores numericos
+            password -> se utiliza para contraseñas
+            range -> se utiliza para establecer un rango
+            reset -> se utiliza para resetear el formulario
+            search -> se utiliza para las barras de búsqueda
+            submit -> se utiliza para enviar el formulario
+            tel -> se utiliza para introducir numeros telefónicos
+            text -> valor por defecto
+            time -> se utiliza para introducir una hora
+            url -> se utiliza para direcciones URL
+            week -> se utiliza para introducir el número de semana del año
+        -->
+        <!-- 
+            Margin : 
+            margin-top: Margen superior
+            margin-right: Margen derecho
+            margin-bottom: Margen inferior
+            margin-left: Margen izquierdo
+            
+            Admite hasta 4 valores que van en el orden de las agujas del reloj:
+                4 valores -> margin:top right bottom left
+                3 valores -> margin:top right/left bottom 
+                2 valores -> margin:top/bottom right/left
+                1 valores -> margin:top/right/bottom/left 
+            
+                
+            Padding : 
+            padding-top: Margen superior
+            padding-right: Margen derecho
+            padding-bottom: Margen inferior
+            padding-left: Margen izquierdo
+            
+            Admite hasta 4 valores que van en el orden de las agujas del reloj:
+                4 valores -> padding:top right bottom left
+                3 valores -> padding:top right/left bottom 
+                2 valores -> padding:top/bottom right/left
+                1 valores -> padding:top/right/bottom/left 
+
+         -->
+        <form>
+            <label>NOMBRE: </label>
+            <input>
+            <!-- <label>FECHA: </label>
+                 <input type="date"> -->
+            <!-- <input type="datetime"> 
+                 <input type="datetime-local"> -->
+            <label>CORREO: </label>
+            <input>
+            <label>COMENTARIO: </label>
+            <input>
+            <button>Envíar formulario</button>
+        </form>
+        <br>
+    </main>
+    <footer>
+        <section>
+            <a title="Clic para chatear" href=" https://api.whatsapp.com/send?phone=50249386307&text=Me%20gustaría%20saber%20sobre%20Promociones%20del%20Petshop " target="_blank" rel="noopener"> <img src="../../Assets/Images/whatsIcon.png"  alt="" width="5%">  
+            </a>
+            <a title="Clic para facebook" href="https://www.facebook.com/" target="_blank" rel="noopener"> <img src="../../Assets/Images/facebook_icon_130940.png"  alt="" width="5%">  
+            </a>
+            <a title="Clic para Twitter" href="https://twitter.com/" target="_blank" rel="noopener"> <img src="../../Assets/Images/logo_twitter.png.crdownload"  alt="" width="5%">  
+            </a>
+        </section>
+        <h4> Derechos reservados Lourdes DV 2022 </h4> 
+    </footer> 
+ </body>
+ </html>

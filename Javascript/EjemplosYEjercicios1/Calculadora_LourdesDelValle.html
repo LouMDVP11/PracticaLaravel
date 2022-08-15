@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- reconocer caracteres especiales -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>CALCULADORA</h1>
+    <br><br>
+    <p>Por favor, ingrese un número</p>
+    <!-- INPUT = TEXTBOX -->
+    <input id="num1"><br>
+    <input id="num2">
+    <button type="button" onclick="suma()" >Realizar Suma</button>
+
+    <p id="Resp"></p>
+
+    <script>
+        function suma(){
+            // definición de valores
+            var x=0, y=0, operacion=0, resultado=0;
+            // se obtuvieron valores por id 
+            x=document.getElementById("num1").value;
+            y=document.getElementById("num2").value;
+            // operacion
+            operacion=parseFloat(x)+parseFloat(y);
+            resultado=operacion;
+            // enviar el resultado para que sea visible
+            document.getElementById("Resp").innerHTML="Resultado: " + resultado;
+        }
+    </script>
+</body>
+</html>

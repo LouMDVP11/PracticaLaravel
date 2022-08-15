@@ -1,0 +1,36 @@
+*{
+    /* background-color:rgb(234, 226, 226); */
+    background-color:rgb(251, 238, 238);
+}
+h1, p, .imagen{
+    text-align:center;
+    /*  background-color: floralwhite;*/
+}
+h2{
+    text-align:center;
+    background-color:rgb(247, 237, 210);
+}
+/* .bloque{
+    background-color: #01633B;
+    color:rgb(88, 81, 2);
+    Generalmente se trabaja en pixeles
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+/*En elementos lineales, es con padding*/
+header{
+    background-color: rgb(236, 231, 225);
+    color:rgb(0, 0, 0);
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
